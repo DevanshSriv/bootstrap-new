@@ -1,0 +1,95 @@
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.f-s-14{
+    font-size: 14px;
+}
+
+.f-w-bold{
+    font-weight: 700;
+}
+
+.bg-ebony--clay {
+  background-color: #252b42;
+}
+
+.bg-image {
+  background-image: linear-gradient(
+      89.85deg,
+      #000000 0.13%,
+      #000000 0.14%,
+      rgba(0, 0, 0, 0)
+    ),
+    url("./assets/imageBG.png");
+    background-position: center;
+    
+}
+
+.image-message{
+    font-size: 40px;
+    line-height: 57px;
+    font-weight: 700;
+    text-align: center;
+    width: 75%;
+}
+
+.review__section-title{
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 57px;
+    text-align: center;
+    letter-spacing: 0.2px;
+}
+
+.logo {
+  font-weight: 700;
+  /* font-size: 24px; */
+  line-height: 32px;
+}
+
+
+a {
+  color: #ffffff !important;
+}
+
+.image-helptext{
+    font-size: 20px;
+line-height: 30px;
+ width: 75%;
+
+text-align: center;
+letter-spacing: 0.2px;
+}
+
+.bg-jordy--blue{
+    background-color: #8EC2F2;
+}
+
+@media screen and (min-width:768px) {
+    
+    .bg-image{
+        background-size: cover;
+        height:100vh;
+        margin-top: -57px;  
+    }
+    
+    .image-message{
+        font-weight: 800;
+        font-size: 58px;
+        line-height: 80px;
+        text-align: unset;
+        width:50%;
+    }
+
+    .image-helptext{
+
+        width:30%;
+        text-align: unset;
+
+    }
+    .bg-ebony--clay {
+        background-color: transparent;
+      }
+    
+}
