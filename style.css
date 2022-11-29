@@ -2,12 +2,34 @@ body {
   font-family: "Montserrat", sans-serif;
 }
 
-.f-s-14{
-    font-size: 14px;
+.ul__style__none {
+
+  list-style: none;
+
 }
 
-.f-w-bold{
-    font-weight: 700;
+.btn-dev {
+  color: #ffffff;
+  background-color: #23a6f0;
+  border-color: #23a6f0;
+}
+
+.btn-outline-dev {
+  color: #ffffff;
+  border: 1px solid #23a6f0;
+}
+
+.no-m-p {
+  margin: 0;
+  padding: 0;
+}
+
+.f-s-14 {
+  font-size: 14px;
+}
+
+.f-w-bold {
+  font-weight: 700;
 }
 
 .bg-ebony--clay {
@@ -22,24 +44,23 @@ body {
       rgba(0, 0, 0, 0)
     ),
     url("./assets/imageBG.png");
-    background-position: center;
-    
+  background-position: center;
 }
 
-.image-message{
-    font-size: 40px;
-    line-height: 57px;
-    font-weight: 700;
-    text-align: center;
-    width: 75%;
+.image-message {
+  font-size: 40px;
+  line-height: 57px;
+  font-weight: 700;
+  text-align: center;
+  width: 75%;
 }
 
-.review__section-title{
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 57px;
-    text-align: center;
-    letter-spacing: 0.2px;
+.review__section-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  text-align: center;
+  letter-spacing: 0.2px;
 }
 
 .logo {
@@ -48,48 +69,326 @@ body {
   line-height: 32px;
 }
 
-
 a {
   color: #ffffff !important;
 }
 
-.image-helptext{
-    font-size: 20px;
-line-height: 30px;
- width: 75%;
+.image-helptext {
+  font-size: 20px;
+  line-height: 30px;
+  width: 75%;
 
-text-align: center;
-letter-spacing: 0.2px;
+  text-align: center;
+  letter-spacing: 0.2px;
 }
 
-.bg-jordy--blue{
-    background-color: #8EC2F2;
+.bg-jordy--blue {
+  background-color: #8ec2f2;
+}
+.review__section--para {
+  width: 75%;
+  text-align: center;
 }
 
-@media screen and (min-width:768px) {
-    
-    .bg-image{
-        background-size: cover;
-        height:100vh;
-        margin-top: -57px;  
-    }
-    
-    .image-message{
-        font-weight: 800;
-        font-size: 58px;
-        line-height: 80px;
-        text-align: unset;
-        width:50%;
-    }
+.user__profile {
+  margin-top: -15px;
+  margin-bottom: 3%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.review__card--title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.1px;
+  color: #252b42;
+}
+.stars__rating {
+  display: flex;
+  align-items: center;
+  gap: 8.6px;
+}
 
-    .image-helptext{
+.star,
+.star::after {
+  height: 25px;
+  width: 25px;
+  clip-path: polygon(
+    20% 87%,
+    50% 66%,
+    80% 87%,
+    67% 54%,
+    96% 35%,
+    60% 35%,
+    50% 5%,
+    40% 35%,
+    4% 35%,
+    33% 54%
+  );
+}
 
-        width:30%;
-        text-align: unset;
+.filled {
+  background-color: red;
+}
 
-    }
-    .bg-ebony--clay {
-        background-color: transparent;
-      }
-    
+.review__card {
+  width: 325px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 30px 40px;
+}
+
+.review__card--body {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16.83px;
+}
+.user--pic {
+  display: none;
+}
+.features__section--feature {
+  max-width: 330px;
+  margin: 0 auto;
+}
+
+.features__para {
+  max-width: 230px;
+  margin: 0 auto;
+}
+
+.features__section {
+  padding: 80px 0;
+}
+
+.tips__consults {
+  margin: 30px 0;
+}
+
+.tips__consults--mobile-view,
+.tips__consults--large-view {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+}
+
+.tips__consults--para {
+  max-width: 260px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.tips__consults--list {
+  padding: 97px 0;
+}
+
+.tips__consults--list-button {
+  padding: 10px 36px;
+  gap: 10px;
+
+  background: #23a6f0;
+  border-radius: 37px;
+}
+
+.tips__consult--cards img{
+  max-width: 100%;
+}
+
+.tips__consults--list-caption {
+  bottom: 31px;
+  left: 27px;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 14.58%,
+    rgba(56, 56, 56, 0.84) 100%
+  );
+}
+
+.pricings__body--list {
+  padding: 0 43px;
+}
+
+.pricings__plan {
+  background-color: #ffffff;
+  padding: 50px 40px;
+  gap: 35px;
+  border-radius: 10px;
+}
+
+.pricings__body--list h3 {
+  font-weight: 700;
+}
+
+.pricings__plan-price {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #23a6f0;
+}
+
+.pricings__plan-currency {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.1px;
+  color: #23a6f0;
+}
+
+.pricings__plan-validity {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.2px;
+  color: #8ec2f2;
+}
+
+.round {
+  position: relative;
+}
+
+.round label {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 28px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 28px;
+}
+
+.round label:after {
+  border: 2px solid #fff;
+  border-top: none;
+  border-right: none;
+  content: "";
+  height: 6px;
+  left: 7px;
+  opacity: 0;
+  position: absolute;
+  top: 8px;
+  transform: rotate(-45deg);
+  width: 12px;
+}
+
+.round input[type="checkbox"] {
+  visibility: hidden;
+}
+
+.round input[type="checkbox"]:checked + label {
+  background-color: #66bb6a;
+  border-color: #66bb6a;
+}
+
+.round input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.unchecked + label {
+  background-color: gray;
+  border-color: gray;
+}
+
+.unchecked + label:after {
+  opacity: 1;
+}
+
+.pricings__plan--perks {
+  gap: 18px;
+}
+
+.contact__section {
+  background: linear-gradient(89.83deg, #FFFFFF 14.24%, #FFFFFF 14.25%, rgba(255, 255, 255, 0) );
+  background-image: url(./assets/contact__image.jpg);
+  background-size:cover;
+  background-position: center;
+  padding: 28px 42px;
+  
+}
+.contact__section-image{
+  width:100%;
+}
+
+.contact__section--form div {
+  gap: 20px;
+}
+
+.contact__section--form form input,.contact__section--form form select{
+  padding: 11px;
+}
+
+.contact__section--form-title {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.contact__section--form-heading {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 57px;
+  letter-spacing: 0.2px;
+  color: #252B42;
+}
+
+.contact__section--form-submit {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  text-align: center;
+  letter-spacing: 0.2px;
+  padding: 15px 40px;
+}
+
+@media screen and (min-width: 768px) {
+  .bg-image {
+    background-size: cover;
+    height: 100vh;
+    margin-top: -57px;
+  }
+
+  .image-message {
+    font-weight: 800;
+    font-size: 58px;
+    line-height: 80px;
+    text-align: unset;
+    width: 50%;
+  }
+
+  .image-helptext {
+    width: 30%;
+    text-align: unset;
+  }
+  .transparent__nav {
+    background-color: transparent;
+  }
+  .review__section--para {
+    width: 50%;
+  }
+
+  .review__card {
+    width: 449px;
+  }
+  .relative {
+    position: relative;
+  }
+  .features__section {
+    padding: 96px 0;
+  }
+  .absolute {
+    position: absolute;
+    top: 28px;
+    left: -40px;
+  }
+  .tips__consults--para {
+    max-width: 470px;
+  }
+  .contact__section{
+    padding: 90px 48px;
+  }
 }
